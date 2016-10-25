@@ -1,0 +1,14 @@
+<head>
+  <meta charset="UTF-8">
+  <title>
+    {% if page.title != "index" %}
+        {{ site.title }}|{{ page.title }}
+    {% else %}
+        {{ site.title }}
+    {% endif %}
+  </title>
+
+  <link rel="stylesheet" href="{{"css/highlight-github.css"| prepend: site.baseurl }}">
+  <script type="text/javascript" src="{{"js/highlight.pack.js"| prepend: site.baseurl }}"></script>
+  <script type="text/javascript">hljs.initHighlightingOnLoad();</script>
+</head>
